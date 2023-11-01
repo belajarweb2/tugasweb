@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Quiz pemrograman Web</title></head>
+    <body>
+        <h2>Quiz Pemrograman Web</h2>
+        <p>
+            <a href="index.html">Home</a>
+            <a href="list_data.html">List Jurusan</a>
+            <a href="input_data.html">Input Data</a>
+            <a href="tabel_data.html">Tampil Tabel</a>
+            <a href="about.html">About</a>
+        </p>
+
+        <h3>Rental Mobil</h3>
+        <form action="proses.php" method="post">
+            <table width="400">
+                <tr>
+                    <td>No Identitas</td>
+                    <td><input type="text" name="ktp"></td>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>No Hp</td>
+                    <td><input type="text" name="nohp"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td>Jenis Mobil</td>
+                    <td>
+                    <Select name=mobil id="mobil">
+                        <option value="Toyota Avanza" >Toyota Avanza </option>
+                        <option value="Toyota Calya" >Toyota Calya </option>
+                        <option value="Toyota Inova" >Toyota Inova </option>
+                        <option value="Daihatsu Xenia" >Daihatsu Xenia </option>
+                        <option value="Daihatsu Sigra" >Daihatsu Sigra </option>
+                        <option value="Honda Brio" >Honda Brio </option>
+                        <option value="Honda Mobilio" >Honda Mobilio</option>
+                        <option value="Mitsubishi Xpander" >Mitsubishi Xpander</option>
+                    </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Type Layanan</td>
+                    <td>
+                        
+                        <input type="radio" value="Lepas Kunci" name="typelayanan" > Lepas Kunci
+                        <input type="radio" value="Dengan Sopir" name="typelayanan" checked>Dengan Sopir
+                        
+                    </td>
+                </tr>
+                
+                <tr>			
+                    <td>Tanggal Sewa</td>
+                    <td><input type="date" name="tglsewa"> s/d <input type="date" name="tglkembali">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td><br></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input name="save" type="submit" value="Submit">
+                        <input name="BtnBatal" type="reset" value="Batal" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </body>
+</html>
